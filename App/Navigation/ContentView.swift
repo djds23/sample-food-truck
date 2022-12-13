@@ -64,6 +64,7 @@ struct ContentView: View {
             let urlLogger = Logger(subsystem: "com.example.apple-samplecode.Food-Truck", category: "url")
             urlLogger.log("Received URL: \(url, privacy: .public)")
             let order = "Order#\(url.lastPathComponent)"
+            // If we want to complete an order, this might be a good spot for the logic
             var newPath = NavigationPath()
             selection = Panel.truck
             Task {
