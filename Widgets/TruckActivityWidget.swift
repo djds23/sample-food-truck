@@ -59,12 +59,12 @@ struct LiveActivityView: View {
     
     var body: some View {
         HStack {
-            Image("IslandExpandedIcon")
+            Image("IslandExpandedIcon") // This might be a bit too large
                 .clipShape(ContainerRelativeShape())
                 .opacity(isLuminanceReduced ? 0.5 : 1.0)
-            OrderInfoView(orderNumber: orderNumber)
+            OrderInfoView(orderNumber: orderNumber) // Update this with link
             Spacer()
-            OrderTimerView(timerRange: timerRange)
+            OrderTimerView(timerRange: timerRange) // Replace this with CapsuleLinkView
         }
         .tint(.primary)
         .padding([.leading, .top, .bottom])
