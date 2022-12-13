@@ -24,7 +24,7 @@ struct TruckActivityWidget: Widget {
                 }
 
                 DynamicIslandExpandedRegion(.trailing, priority: 1) {
-                    ExpandedTrailingView(orderNumber: context.attributes.orderID, timerInterval: context.state.timerRange)
+                    ExpandedTrailingView(orderNumber: context.attributes.orderID, timerRange: context.state.timerRange)
                         .dynamicIsland(verticalPlacement: .belowIfTooWide)
                 }
             } compactLeading: {
