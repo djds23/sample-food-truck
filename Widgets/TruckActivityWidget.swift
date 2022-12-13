@@ -9,9 +9,10 @@ Defines the live activity and dynamic island.
 import SwiftUI
 import WidgetKit
 import FoodTruckKit
+import os
 
 struct TruckActivityWidget: Widget {
-    
+
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: TruckActivityAttributes.self) { context in
             LiveActivityView(orderNumber: context.attributes.orderID, timerRange: context.state.timerRange)
