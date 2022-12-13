@@ -127,13 +127,13 @@ struct OrderTimerView: View {
 
 struct ExpandedTrailingView: View {
     var orderNumber: String
-    var timerInterval: ClosedRange<Date>
+    var timerRange: ClosedRange<Date>
     
     var body: some View {
         HStack(alignment: .lastTextBaseline) {
             OrderInfoView(orderNumber: orderNumber)
             Spacer()
-            OrderTimerView(timerRange: timerInterval)
+            OrderTimerView(timerRange: timerRange)
         }
         .tint(Color("LightIndigo"))
     }
