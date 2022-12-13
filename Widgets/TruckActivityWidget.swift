@@ -139,6 +139,16 @@ struct ExpandedTrailingView: View {
     }
 }
 
+struct CapsuleLinkView: View {
+    var orderNumber: String
+    var body: some View {
+        Text("hello")
+            .onAppear {
+                fatalError("TODO:// Implement this")
+            }
+    }
+}
+
 struct TruckActivityPreviewProvider: PreviewProvider {
     static let activityAttributes = TruckActivityAttributes(
         orderID: "1234", order: [Donut.preview.id], sales: [Donut.preview.id: 4], activityName: "activity name"
